@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+ <!-- Bean Inheritance
+  -->
+
+
+	<bean id="baseCar" class="in.ineuron.comp.Car" abstract="true">
+
+		<constructor-arg name="model" value="swift" />
+		<constructor-arg name="company" value="suzuki" />
+		<constructor-arg name="type" value="hutchback" />
+		<constructor-arg name="fuelType" value="diesel" />
+		<constructor-arg name="engineCC" value="12000" />
+
+
+	</bean>
+
+	<bean id="car1" class="in.ineuron.comp.Car" parent="baseCar">
+
+		<constructor-arg name="regNo" value="KA05787654" />
+		<constructor-arg name="engineNo" value="5543456" />
+		<constructor-arg name="color" value="white" />
+		<constructor-arg name="owner" value="nitin" />
+
+	</bean>
+
+	<bean id="car2" class="in.ineuron.comp.Car" parent="baseCar">
+
+		<constructor-arg name="regNo" value="KA05F9867" />
+		<constructor-arg name="engineNo" value="5543245" />
+		<constructor-arg name="color" value="red" />
+		<constructor-arg name="owner" value="hyder" />
+
+
+	</bean>
+
+
+
+
+</beans>

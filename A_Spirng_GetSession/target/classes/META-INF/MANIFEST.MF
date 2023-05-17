@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: mangesh.dhande
+Build-Jdk: 17.0.6
+Implementation-Title: A_Spirng_GetSession
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: in.ineuron
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/A_Spirng_GetSession
+Created-By: Maven Integration for Eclipse
+
